@@ -1,7 +1,7 @@
 class CategoryValidator < ActiveModel::Validator
 
   def validate(record)
-    unless record.category.empty? == false
+    unless record.category.valid?
       record.errors[:category] << "Need to have a category"
     end
   end
