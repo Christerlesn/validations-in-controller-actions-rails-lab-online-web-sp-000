@@ -1,8 +1,8 @@
 class CategoryValidator < ActiveModel::Validator
 
-  def validate(record)
-    unless record.category == nil
-      record.errors[:category] << "Need to have a category"
-    end
-  end
+  # def validate(record)
+  #   unless record.category
+  #     record.errors[:category] << "Need to have a category"
+  #   end
+  # end
 end
